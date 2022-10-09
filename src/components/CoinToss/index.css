@@ -1,0 +1,85 @@
+/* Write your CSS here */
+.app-container {
+  background-image: linear-gradient(to left, #e2a139, #f9d423);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.coin-game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  height: 570px;
+  width: 500px;
+  font-family: 'Roboto';
+}
+.image {
+  width: 200px;
+  height: 200px;
+}
+.heading {
+  padding-top: 30px;
+  color: #a35200;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.paragraph {
+  padding-top: 0px;
+  font-size: 28px;
+  color: #334155;
+}
+.button {
+  color: #a35200;
+  background-color: #f9d423;
+  border-radius: 8px;
+  width: 90px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+}
+
+.toss-result-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.toss-result {
+  margin-right: 18px;
+  color: #475569;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .toss-result-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .coin-game-card {
+    width: 80%;
+    height: 500px;
+  }
+  .image {
+    width: 120px;
+    height: 120px;
+  }
+  .heading {
+    margin-top: 25px;
+    font-size: 25px;
+  }
+  .paragraph {
+    font-size: 18px;
+  }
+  .toss-result {
+    font-size: 13px;
+  }
+}
